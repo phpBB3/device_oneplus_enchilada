@@ -25,8 +25,8 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 # Kernel
 TARGET_KERNEL_CONFIG := enchilada_defconfig
 
-# Recovery
-TARGET_USES_AOSP_RECOVERY := true
+#TWRP Support
+-include device/twrp/enchilada/twrp.mk
 
 # inherit from the proprietary version
 -include vendor/oneplus/enchilada/BoardConfigVendor.mk
